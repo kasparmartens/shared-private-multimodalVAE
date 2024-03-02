@@ -1,0 +1,7 @@
+__pycache__
+.vscode
+artifacts/
+downloads/
+multirun/
+outputs/
+wandb/
