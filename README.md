@@ -27,7 +27,7 @@ python experiments/experiment.py --multirun model.name=MMVAE,MMVAE++,MVAE,MoPoE-
 
 ### Single cell RNA-seq and ATAC-seq experiment
 
-![](single_cell_example.jpeg)
+![](figures/single_cell_example.jpeg)
 
 Single cell RNA-seq and ATAC-seq experiment (loaded via `dataset.name=MOFA_RNA_ATAC`)
 
