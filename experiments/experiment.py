@@ -36,7 +36,7 @@ def main(cfg : DictConfig) -> None:
 
     # convert cfg to dict
     cfg_dict = OmegaConf.to_container(cfg, resolve=True)
-    run = wandb.init(project="multimodalVAE", config=cfg_dict, tags=[cfg.dataset.name, latent_structure, "final_final"], reinit=True)
+    run = wandb.init(project="multimodalVAE", config=cfg_dict, tags=[cfg.dataset.name], reinit=True)
 
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
     print(f"device {device}")
