@@ -4,9 +4,13 @@ Code for our paper **"Disentangling shared and private latent factors in multimo
 
 ![Summary schematic](figures/fig1.png)
 
-In [experiments/core.py](experiments/core.py), we provide the implementation and training script for various versions of MVAEs, MMVAEs and MoPoE-VAEs. You can find the main model classes in [multimodalVAE/MVAE.py](multimodalVAE/MVAE.py) and [multimodalVAE/MMVAE.py](multimodalVAE/MMVAE.py). 
+Here is a brief overview of the codebase:
 
-We use [hydra](https://hydra.cc/) framework to configure the experiments and [W&B](https://wandb.ai/site) for tracking. Below are examples how to train various versions of multimodal VAEs. Note that `model.name` can take values in `[MVAE, MoPoE-VAE, MMVAE, MMVAE++]`. 
+* In [experiments/core.py](experiments/core.py), we provide the implementation and training script for various versions of MVAEs, MMVAEs and MoPoE-VAEs. 
+* In [multimodalVAE/MVAE.py](multimodalVAE/MVAE.py) and [multimodalVAE/MMVAE.py](multimodalVAE/MMVAE.py), you can find the main model classes.  
+* We use [hydra](https://hydra.cc/) framework to configure the experiments and [W&B](https://wandb.ai/site) for tracking. The main file containing the wrapper for training and evaluation is [experiments/experiment.py](experiments/experiment.py). 
+
+Below are examples how to train various versions of multimodal VAEs. Note that `model.name` can take values in `[MVAE, MoPoE-VAE, MMVAE, MMVAE++]`. 
 
 ### Toy data experiments
 
